@@ -12,7 +12,7 @@ public class Doctor {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/items", "root", "root");
+			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/doc", "root", "root");
 			// For testing
 			System.out.print("Successfully connected");
 		} catch (Exception e) {
