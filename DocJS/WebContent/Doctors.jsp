@@ -1,4 +1,4 @@
-<%@page import="com.item"%>
+<%@page import="com.Doctor"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
@@ -32,7 +32,7 @@
 	<br>
 	<div id="divItemsGrid">
 		<%
-			item itemObj = new item();
+			Doctor itemObj = new Doctor();
 			out.print(itemObj.readitems());
 		%>
 	</div>
