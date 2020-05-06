@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
 
-public class item {
+public class Doctor {
 
 	public Connection connect() {
 		Connection con = null;
@@ -85,7 +85,7 @@ public class item {
 			String newItems = readitems();
 			output = "{\"status\":\"success\", \"data\": \"" +newItems + "\"}";
 		} catch (Exception e) {
-			output = "{\"status\":\"error\", \"data\":\"Error while inserting the item.\"}";
+			output = "{\"status\":\"error\", \"data\":\"Error while inserting the Doctor.\"}";
 			System.err.println(e.getMessage());
 		}
 		return output;
@@ -114,7 +114,7 @@ public class item {
 			String newItems = readitems();
 			output = "{\"status\":\"success\", \"data\": \"" +newItems + "\"}";;
 		} catch (Exception e) {
-			output = "{\"status\":\"error\", \"data\":\"Error while updating the item.\"}";
+			output = "{\"status\":\"error\", \"data\":\"Error while updating the Doctor.\"}";
 			System.err.println(e.getMessage());
 		}
 		return output;
@@ -139,7 +139,7 @@ public class item {
 			String newItems = readitems();
 			output = "{\"status\":\"success\", \"data\": \"" +newItems + "\"}";
 		} catch (Exception e) {
-			output = "{\"status\":\"error\", \"data\":\"Error while deleting the item.\"}";
+			output = "{\"status\":\"error\", \"data\":\"Error while deleting the Doctor.\"}";
 			System.err.println(e.getMessage());
 		}
 		return output;
